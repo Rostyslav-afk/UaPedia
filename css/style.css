@@ -1,3 +1,7 @@
+@media screen and (min-width: 752px) {}
+
+@media screen and (min-width: 1264px) {}
+
 /* Roots */
 :root {
     --black-color: #000;
@@ -136,6 +140,10 @@ table {
     border-spacing: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Container */
 .container {
     max-width: 1264px;
@@ -160,11 +168,25 @@ table {
 
 /* Header */
 .header {
-    padding-top: 35px;
-    padding-bottom: 23px;
+    padding-top: 23px;
+    padding-bottom: 30px;
+
+    @media screen and (min-width: 752px) {
+        padding-top: 25px;
+        padding-bottom: 42px;
+    }
+
+    @media screen and (min-width: 1264px) {
+        padding-top: 35px;
+        padding-bottom: 23px;
+    }
 }
 
-.header-list {}
+.header-list {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
 
 .header-img {
     width: 72px;
@@ -174,35 +196,147 @@ table {
 .header-title {
     color: var(--black-color);
     font-family: "Kosugi Maru";
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 400;
+
+    @media screen and (min-width: 1280px) {
+        font-size: 48px;
+    }
 }
 
 /* Hero */
 
 .hero {
-    padding-bottom: 129px;
+    padding-bottom: 20px;
+
+    @media screen and (min-width: 752px) {
+        padding-bottom: 70px;
+    }
+
+    @media screen and (min-width: 1264px) {
+        padding-bottom: 99px;
+    }
 }
 
 .hero-title {
     color: var(--black-color);
     font-family: "Roboto";
-    font-size: 32px;
+    font-size: 16px;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 31px;
+    margin-bottom: 22px;
+
+    @media screen and (min-width: 752px) {
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1264px) {
+        font-size: 32px;
+        margin-bottom: 31px;
+    }
 }
+
+.box {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 752px) {
+        gap: 11px;
+        flex-direction: row;
+    }
+
+    @media screen and (min-width: 1264px) {
+        gap: 65px;
+        flex-direction: row;
+    }
+}
+
+.hero-img {}
 
 .hero-subtitle {
     color: var(--black-color);
     font-family: "Roboto";
-    font-size: 48px;
+    font-size: 16px;
     font-weight: 400;
+    margin-top: 4px;
+    text-align: center;
+
+    @media screen and (min-width: 752px) {
+        margin-top: 9px;
+        font-size: 32px;
+
+    }
+
+    @media screen and (min-width: 1264px) {
+        font-size: 48px;
+    }
 }
 
 .hero-text {
     color: var(--black-color);
     font-family: "Roboto";
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 400;
+    width: 282px;
+    height: 514px;
+    line-height: 1.18;
+    margin-top: 9px;
+
+    @media screen and (min-width: 752px) {
+        width: 100%;
+        max-width: 600px;
+        font-size: 20px;
+        line-height: 1.15;
+        margin-top: 0px;
+    }
+
+    @media screen and (min-width: 1264px) {
+        font-size: 24px;
+        max-width: 772px;
+        width: 772px;
+        height: 421px;
+        line-height: 1.16;
+        margin-top: 33px;
+    }
+}
+
+/* Footer */
+
+.footer {
+    padding-bottom: 22px;
+
+    @media screen and (min-width: 752px) {
+        padding-bottom: 17px;
+    }
+
+    @media screen and (min-width: 1264px) {
+        padding-bottom: 15px;
+    }
+}
+
+.box-footer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    color: red;
+    font-size: 12px;
+    @media screen and (min-width: 752px) {
+        font-size: 16px;
+    }
+}
+
+.footer-link {
+    color: red;
+    font-size: 12px;
+    @media screen and (min-width: 752px) {
+        font-size: 16px;
+    }
 }
